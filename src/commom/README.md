@@ -1,0 +1,1 @@
+# Các component, service ... và cấu hình dùng chung cho tất cả các ứng dụng trong dự án

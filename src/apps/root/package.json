@@ -1,0 +1,11 @@
+{
+    "name": "MainApplication",
+    "version": "1.2.1",
+    "main": "src/index.ts",
+    "module": "src/index.ts",
+    "private": true,
+    "scripts": {
+     
+    },
+    "dependencies": {}
+  }

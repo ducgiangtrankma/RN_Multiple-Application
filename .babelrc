@@ -1,0 +1,10 @@
+{
+    "plugins": [
+      ["module-resolver", {
+        "root": ["./"],
+        "alias": {
+          "@app_common": "./src/common"
+        }
+      }]
+    ]
+  }

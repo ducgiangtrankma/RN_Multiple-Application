@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import {Header, _screen_height, _screen_width} from '@app_common';
 import {App, AppType, ListApp} from './HardData';
 interface HomeProps {}
 export const Home: FC<HomeProps> = ({}) => {
@@ -23,6 +24,8 @@ export const Home: FC<HomeProps> = ({}) => {
   };
   return (
     <SafeAreaView>
+      <Header />
+
       <Text style={styles.title}>Router application</Text>
       <View style={styles.container}>
         {ListApp.map((e, index) => {
@@ -36,6 +39,8 @@ export const Home: FC<HomeProps> = ({}) => {
           );
         })}
       </View>
+      <Text style={styles.scSize}>Screen height: {_screen_height}</Text>
+      <Text style={styles.scSize}>Screen width: {_screen_width}</Text>
     </SafeAreaView>
   );
 };
@@ -68,5 +73,8 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     fontSize: 24,
     fontWeight: 'bold',
+  },
+  scSize: {
+    alignSelf: 'center',
   },
 });
